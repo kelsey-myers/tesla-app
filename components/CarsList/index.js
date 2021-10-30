@@ -8,6 +8,7 @@ export default function CarsList(props) {
   return (
     <View style={styles.container}>
       <FlatList
+        bounces={false}
         data={cars}
         renderItem={({ item }) => <CarItem key={item} car={item} />}
         showsVerticalScrollIndicator={false}
